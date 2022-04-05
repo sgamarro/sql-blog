@@ -10,14 +10,44 @@ header{
 }
 nav{
     display:flex;
+    align-items: center;
+    margin-left: 20px;
 }
 
 nav a {
     text-decoration: none;
     font-size: 20px;
-    color: white;
     padding: 10px;
-    
+    color: black;
+}
+nav a:hover{
+    border-bottom: 2px solid black;
+}
+.dropdown button{
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    color: black;
+}
+.dropdown .drp-content{
+    background-color: aliceblue;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 100px;
+    display: none;
+}
+.dropdown:hover .drp-content{
+    display: block;
+}
+.dropdown .drp-content a{
+    color: black;
+    display: block;
+}
+.drp-content a:hover{
+background-color: rgb(166, 205, 240);
 }
 .title{
     margin-left: 50px;
