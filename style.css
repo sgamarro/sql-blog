@@ -80,12 +80,14 @@ background-color: rgb(166, 205, 240);
     font-weight: bold;
 }
 .post_example{
-    padding: 5px;
-    background-color: rgb(238, 237, 237);
-    border-radius: 10px;
-    box-shadow: 2px 6px 2px;
+    
+    display: flex;
+    flex-direction: column;
+    
 }
 .post_example img {
     width: 400px;
     margin: 5px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 6px ;
 }
