@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,55 +8,117 @@
     <title>Data Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1 class="title"><img src="images/img_286890.png" alt=""> Database</h1>
-        <nav>
-            
-                <div class="dropdown">
-                 <button>Blogs &#8595;</button> 
-                 <div class="drp-content">
-                     <a href="#set_up">Set up</a>
-                     <a href="#">Blog 2</a>
-                     <a href="#">Blog 3</a>
-                 </div>  
-                </div>
-                <a href="#start">Start</a>
-                <a href="#">Resources</a>
-        </nav>
     </header>
-    <div id="start"></div>
-    <div class="post_one post" id="set_up" >
+    <nav>
+
+        <div class="dropdown">
+            <button>Blogs &#8595;</button>
+            <div class="drp-content">
+                <a href="#types">Commands</a>
+                <a href="#set_up">Set up</a>
+                <a href="#">Blog 3</a>
+            </div>
+        </div>
+        <a href="#">Start</a>
+        <a href="#">Resources</a>
+    </nav>
+
+    <div class="post" id="types">
+        <div class="post_info post_two">
+            <h2>Type of SQL Commands</h2>
+            <ol>
+                <li>DDL: Data Definition Lenguage</li>
+                <p>Can be use to define the database squema
+                    this commands are use to create, modify and delete
+                    database structures
+                </p>
+                <ul>
+                    <li>CREATE</li>
+                    <li>DROP</li>
+                    <li>ALTER</li>
+                    <li>TRUNCATE</li>
+                    <li>COMMENT</li>
+                    <li>RENAME</li>
+                </ul>
+                <li>DML: Data Manipulation Lenguage</li>
+                <p>It deals with the manipulation of the data present
+                    in an specific database
+                </p>
+                <ul>
+                    <li>INSERT</li>
+                    <li>UPDATE</li>
+                    <li>DELETE</li>
+                    <li>LOCK</li>
+                </ul>
+                <li>DCL: Data Control Lenguage</li>
+                <p>This commands deal with the permissions fro the data in 
+                    certain databases
+                </p>
+                <ul>
+                    <li>GRANT</li>
+                    <li>REVOKE</li>
+                </ul>
+                <li>TCL: Transaction Control Lenguage</li>
+                <p>Assings task to the database, starting with specific conditions, and
+                    ending up when the conditions set are met, allowing the transaction
+                    to be completed
+                </p>
+                <ul>
+                    <li>COMMIT</li>
+                    <li>ROLLBACK</li>
+                    <li>SAVEPOINT</li>
+                    <li>SET TRANSACTION</li>
+                </ul>
+                <li>DQL: Data Query Lenguage</li>
+                <p>Can be use to get the data out of the database
+                    and imposing a commant to it
+                </p>
+                <ul>
+                    <li>SELECT</li>
+                </ul>
+            </ol>
+        </div>
+        <div class="post_example post_two_example">
+            <img src="images/file.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="post_one post" id="set_up">
         <div class="post_info">
             <h2>Set up</h2>
-                <ul>
-                    <li>Determine the purpose of your database</li>
-                    <p>
-                        The purpose determines what type of data the database table  would hold, such as specific values like usernames and passwords
-                        or other type of data.
-                    </p>
-                    <li>Devide the information into tables</li>
-                    <p>
-                        Deviding the informatio helps orginize the outcome of the database
-                        as well as figure out what relationship each piece of data has to one another
-                    </p>
-                    <li>Turn informationitems into colums</li>
-                    <p>
-                        After orginizing the information create colums that have related information where the data would be
-                        hold by their category 
-                    </p>
-                    <li>Specify primary keys</li>
-                    <p>
-                        Primary keys such as id would be specific to each data, also would be helpful to relate each 
-                        table to each other
-                    </p>
-                    <li>Set up the tables relationships</li>
-                    <p>
-                        Each table would co-relate with the primary keys, determine the relationship of each table with 
-                        specific keys or data.
-                    </p>
-                    <li>Refind your desing</li>
-                </ul>
+            <ul>
+                <li>Determine the purpose of your database</li>
+                <p>
+                    The purpose determines what type of data the database table would hold, such as specific values like
+                    usernames and passwords
+                    or other type of data.
+                </p>
+                <li>Devide the information into tables</li>
+                <p>
+                    Deviding the informatio helps orginize the outcome of the database
+                    as well as figure out what relationship each piece of data has to one another
+                </p>
+                <li>Turn informationitems into colums</li>
+                <p>
+                    After orginizing the information create colums that have related information where the data would be
+                    hold by their category
+                </p>
+                <li>Specify primary keys</li>
+                <p>
+                    Primary keys such as id would be specific to each data, also would be helpful to relate each
+                    table to each other
+                </p>
+                <li>Set up the tables relationships</li>
+                <p>
+                    Each table would co-relate with the primary keys, determine the relationship of each table with
+                    specific keys or data.
+                </p>
+                <li>Refind your desing</li>
+            </ul>
         </div>
         <div class="post_example post_one_expample">
             <img src="images/nosql-document-oriented-databases-detailed-overview.jpg" alt="">
@@ -64,6 +127,7 @@
     </div>
 
 
-    
+
 </body>
+
 </html>
